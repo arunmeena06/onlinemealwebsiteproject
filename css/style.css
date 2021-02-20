@@ -1,0 +1,235 @@
+/* Css Reset  */
+* {
+  /* background-color: #eee; */
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* CSS variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navbar css */
+#navbar {
+  /* background-color: white ; */
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 7px 1px #5e5e5e87;
+}
+/* navbar: Logo and images */
+#logo {
+  margin: -2px 51px;
+}
+#logo img {
+  height: 58px;
+  margin: 3px 16px;
+}
+/* navbar: List Styleing */
+#navbar {
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+  position: sticky;
+}
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  color: white;
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  font-family: Catamaran, sans-serif;
+  color: black;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: white;
+  background-color: #3addbe;
+}
+/* Home section  */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 101px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url(../images/Home_background/home.png) no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 432px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#home h1 {
+  font-size: 3.0rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#home p {
+  color: black;
+  font-size: 1.1rem;
+  padding: 0;
+  font-family: Catamaran, sans-serif;
+}
+
+/* services classes */
+#services {
+  margin: 24px;
+  display: flex;
+}
+#services .box {
+  /* border: 2px solid black; */
+  padding: 24px;
+  margin: 42px auto;
+  border-radius: 23px;
+  /* background-color: #eee; */
+  box-shadow: 2px 2px 1px 1px #3addbf56;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+#services .box:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.6s;
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+  transform: scale(1.1);
+  transition: ease-in-out 2.5ms;
+}
+
+/* Offers sections */
+
+/* About Us Section */
+/* Contact us section */
+#contact{
+  position: relative;
+ 
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background: url(../images//Contact_us/pexels-ivan-samkov-4491881.jpg) no-repeat center center/cover;
+}
+#contact-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  background-color: #f7f7f7;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.send {
+  width: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #3ADDBE;
+  color: rgb(238, 238, 238);
+  margin: 15px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.send:hover {
+  transform: scale(1.1);
+  transition: ease-in-out all 1.5ms;
+}
+
+/* footer section */
+footer{
+  background-color: rgba(37, 37, 37, 0.849);
+  color: white;
+  padding: 9px 20px;
+  
+}
+
+/* utility classes */
+.h-primary {
+  font-size: 2.8rem;
+  padding: 12px;
+  height: 50px;
+  margin: 25px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+}
+.btn {
+  padding: 7px 34px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(58, 221, 190);
+  color: rgb(238, 238, 238);
+  margin: 15px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 55px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: ease-in-out all 1.5ms;
+}
+.center {
+  text-align: center;
+}
